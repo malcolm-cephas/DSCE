@@ -1,0 +1,36 @@
+module BinaryUpCounter_tb;
+
+    // Testbench signals
+    reg clk;
+    reg rst;
+    wire [3:0] Q;
+
+    // Instantiate the BinaryUpCounter module
+    BinaryUpCounter uut (
+        .clk(clk),
+        .rst(rst),
+        .Q(Q)
+    );
+
+    // Clock generation
+    initial begin
+        clk = 0;
+        forever #5 clk = ~clk; // Toggle clock every 5 time units
+    end
+
+    // Test sequence
+    initial begin
+        // Monitor signals
+        $monitor("Time: %0d, Reset: %b, Q: %b", $time, rst, Q);
+
+        // Initialize signals
+        rst = 1; // Apply reset
+        #10;
+        
+        rst = 0; // Release reset
+        #100;
+        
+        $finish; // End simulation
+    end
+
+endmodule
