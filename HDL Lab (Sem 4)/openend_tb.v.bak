@@ -1,0 +1,35 @@
+module random_counter_tb;
+
+    reg clk;
+    reg rst;
+    wire [3:0] q;
+
+    // Instantiate the random_counter_4bit module
+    random_counter uut (
+        .clk(clk),
+        .rst(rst),
+        .q(q)
+    );
+
+    // Clock generation
+    initial begin
+        clk = 0;
+        forever #5 clk = ~clk; // 10 time units clock period
+    end
+
+    // Test sequence
+    initial begin
+        // Apply reset
+        rst = 1;
+        #10;
+        rst = 0;
+        
+        // Let the counter run for a while
+        #300; 
+        
+        // Stop the simulation
+        $stop;
+    end
+endmodule
+
+

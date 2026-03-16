@@ -1,0 +1,33 @@
+module random_counter (
+    input clk,
+    input rst,
+    output reg [3:0] q
+);
+
+    reg [3:0] lfsr;
+    wire feedback;
+
+     assign feedback = lfsr[3] ^ lfsr[0];
+
+    initial begin
+        lfsr = 4'b0001; 
+    end
+
+    // LFSR logic to generate pseudo-random numbers
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            lfsr <= 4'b0001; // Reset to initial seed
+        end else begin
+            lfsr <= {lfsr[2:0], feedback}; // LFSR with feedback
+        end
+    end
+
+    // Assign the LFSR value to the output
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            q <= 4'b0000; // Reset output
+        end else begin
+            q <= lfsr; // Output LFSR value
+        end
+    end
+endmodule
