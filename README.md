@@ -18,14 +18,14 @@ The labs are organized by semester and subject for easy navigation:
 
 | Semester | Lab / Subject | Key Focus |
 | :--- | :--- | :--- |
-| **Sem 7** | [AES Lab](./AES%20Lab%20(Sem%207)) | Automotive EElectronics & Systems / Security |
+| **Sem 7** | [AES Lab](./AES%20Lab%20(Sem%207)) |Advances Embedded Systems |
 | **Sem 7** | [CNS Lab](./CNS%20Lab%20(Sem%207)) | Cryptography and Network Security |
 | **Sem 6** | [IOT Lab](./IOT%20Lab%20(Sem%206)) | Arduino, Sensors, and Connectivity |
-| **Sem 6** | [SVV Lab](./SVV%20Lab%20(Sem%206)) | Software Verification and Validation |
+| **Sem 6** | [SVV Lab](./SVV%20Lab%20(Sem%206)) | System Verilog and Verification |
 | **Sem 5** | [VLSI Lab](./VLSI%20Lab%20(Sem%205)) | CMOS Design & Layout (Verilog/Cadence) |
 | **Sem 5** | [DCS Lab](./DCS%20Lab%20(Sem%205)) | Digital Communication Systems |
-| **Sem 5** | [ERS Lab](./ERS%20Lab%20(Sem%205)) | Embedded & Real-time Systems |
-| **Sem 4** | [DSP Lab](./DSP%20Lab%20(Sem%204)) | Signal Processing using MATLAB |
+| **Sem 5** | [ERS Lab](./ERS%20Lab%20(Sem%205)) | Electromagnetics & Radiating Systems |
+| **Sem 4** | [DSP Lab](./DSP%20Lab%20(Sem%204)) | Digital Signal Processing |
 | **Sem 4** | [HDL Lab](./HDL%20Lab%20(Sem%204)) | Hardware Description Language (Verilog) |
 | **Sem 4** | [MCESD Lab](./MCESD%20Lab%20(Sem%204)) | Microcontrollers & Embedded Systems |
 | **Sem 3** | [DEDV](./DEDV%20(Sem%203)) | Digital Electronics Design using Verilog |
