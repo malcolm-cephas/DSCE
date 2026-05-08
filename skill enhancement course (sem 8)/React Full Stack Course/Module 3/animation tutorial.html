@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="animate.css">
+    <style>
+        *{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-left: 50px;
+            margin-right: 50px;
+            padding: 5px;
+        }
+        body{
+            background-color: bisque;
+        }
+
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            25% {opacity: 0.5;}
+            50% {opacity: 1;}
+            75% {opacity: 0.25;}
+            100% {opacity: 0;}
+        }
+
+        .fade-in-element{
+            animation: fadeIn 5s ease-out infinite;
+            background-color: darkseagreen;
+            border: 1px solid;
+            border-radius: 12px;
+        }
+        .fade-in-element1{
+            animation: fadeIn 5s ease infinite;
+            background-color: cornflowerblue;
+            border: 1px solid;
+            border-radius: 12px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        @keyframes slideButton {
+            0% { transform: translateX(-100%);}
+            100% { transform: translateX(0%);}
+        }
+        
+        .buttonSlide{
+            animation: slideButton 1s ease-out;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>@keyframes demo</h1>
+    <div class="fade-in-element">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores voluptas itaque, laboriosam,
+            libero architecto possimus necessitatibus magnam ducimus iusto ipsam odit voluptatum aut earum eum
+            distinctio. Nulla, quia fugiat!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores voluptas itaque, laboriosam,
+            libero architecto possimus necessitatibus magnam ducimus iusto ipsam odit voluptatum aut earum eum
+            distinctio. Nulla, quia fugiat!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores voluptas itaque, laboriosam,
+            libero architecto possimus necessitatibus magnam ducimus iusto ipsam odit voluptatum aut earum eum
+            distinctio. Nulla, quia fugiat!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores voluptas itaque, laboriosam,
+            libero architecto possimus necessitatibus magnam ducimus iusto ipsam odit voluptatum aut earum eum
+            distinctio. Nulla, quia fugiat!</p>
+    </div>
+
+    <div class="fade-in-element1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores voluptas itaque, laboriosam,
+            libero architecto possimus necessitatibus magnam ducimus iusto ipsam odit voluptatum aut earum eum
+            distinctio. Nulla, quia fugiat!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores voluptas itaque, laboriosam,
+            libero architecto possimus necessitatibus magnam ducimus iusto ipsam odit voluptatum aut earum eum
+            distinctio. Nulla, quia fugiat!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores voluptas itaque, laboriosam,
+            libero architecto possimus necessitatibus magnam ducimus iusto ipsam odit voluptatum aut earum eum
+            distinctio. Nulla, quia fugiat!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores voluptas itaque, laboriosam,
+            libero architecto possimus necessitatibus magnam ducimus iusto ipsam odit voluptatum aut earum eum
+            distinctio. Nulla, quia fugiat!</p>
+    </div>
+
+    <button class="buttonSlide">click here for the report</button>
+</body>
+
+</html>
