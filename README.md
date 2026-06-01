@@ -1,5 +1,7 @@
 # DSCE Lab Programs 🎓
 
+**_This repository has been archived as it contains the complete set of lab programs, and no further content is expected to be added._**
+
 ## 🛠️ Technology Stack
 
 The repository features a diverse range of programming languages, hardware description languages, and simulation tools:
