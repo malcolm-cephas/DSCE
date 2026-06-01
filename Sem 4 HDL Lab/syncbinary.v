@@ -1,0 +1,13 @@
+module syncbinary (clk, rst, q);
+input clk, rst;
+output [3:0]q;
+reg [3:0]q;
+initial q = 4'B0000;
+always @ (posedge clk)
+begin
+if (rst == 1'B1)
+q = 4'B0000;
+else
+q = q + 1;
+end
+endmodule

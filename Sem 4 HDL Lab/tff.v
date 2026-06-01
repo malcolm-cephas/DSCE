@@ -1,0 +1,21 @@
+module tff(t, clk, rstn, q, qb); 
+input t, rstn, clk;
+output q, qb; 
+reg q, qb;
+always @(posedge clk) 
+begin
+if (!rstn) 
+begin
+q <= 0;
+qb <= 1; 
+end
+else if (t) 
+begin
+q = ~q; qb = ~qb; 
+end
+else 
+begin
+q = q; qb = qb; 
+end
+end 
+endmodule
